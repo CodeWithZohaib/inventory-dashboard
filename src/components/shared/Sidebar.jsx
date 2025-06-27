@@ -3,9 +3,11 @@ import { NavLink } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import {
   BarChart3,
+  BarChart2,
+  Building2,
   Package,
   ShoppingCart,
-  Users,
+  Store,
   Settings,
   Grid3X3,
   Menu,
@@ -21,7 +23,9 @@ const Sidebar = () => {
     { name: 'Dashboard', path: '/dashboard', icon: <BarChart3 className="h-4 w-4" /> },
     { name: 'Inventory', path: '/inventory', icon: <Package className="h-4 w-4" /> },
     { name: 'Orders', path: '/orders', icon: <ShoppingCart className="h-4 w-4" /> },
-    { name: 'Customers', path: '/customers', icon: <Users className="h-4 w-4" /> },
+    { name: 'Report', path: '/report', icon: <BarChart2 className="h-4 w-4" /> },
+        { name: 'Supplier', path: '/supplier', icon: <Building2 className="h-4 w-4" /> },
+    { name: 'Manage Store', path: '/store', icon: <Store className="h-4 w-4" /> },
     { name: 'Settings', path: '/settings', icon: <Settings className="h-4 w-4" /> },
   ];
 
